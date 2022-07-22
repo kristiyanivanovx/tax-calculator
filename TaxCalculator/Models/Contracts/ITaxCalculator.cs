@@ -1,10 +1,10 @@
-namespace TaxCalculator.Contracts
+namespace TaxCalculator.Models.Contracts
 {
     public interface ITaxCalculator
     {
-        string UseGreeting();
+        string UseGreetingMessage();
 
-        string AskForInput();
+        string UseAskForInputMessage();
 
         string GetNetIncomeMessage();
 
@@ -12,7 +12,7 @@ namespace TaxCalculator.Contracts
 
         void CalculateIncomeTax();
     
-        bool CheckDollarsBelowThreshold();
+        bool IsBaseSalaryBelowThreshold();
 
         void CalculateSocialTax();
 
