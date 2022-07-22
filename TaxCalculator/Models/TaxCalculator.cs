@@ -4,7 +4,6 @@ namespace TaxCalculator.Models
 {
     public class TaxCalculator : ITaxCalculator
     {
-        private const string GreetingMessage = "Welcome to Tax Calculator!";
         private const string InvalidFormatMessage = "Invalid dollars format. Use whole numbers (i.e. 3000) instead.";
         private const string ExpectInputMessage = "Please, input gross value: ";
         private const string NetIncomeMessage = "Your net income is: {0}";
@@ -37,12 +36,6 @@ namespace TaxCalculator.Models
 
         private double SocialTaxPercent { get; set; }
 
-        public string UseGreetingMessage() 
-            => GreetingMessage;
-        
-        public string UseAskForInputMessage()
-            => ExpectInputMessage;
-        
         public string GetNetIncomeMessage() 
             => string.Format(NetIncomeMessage, this.NetIncome.ToString());
         

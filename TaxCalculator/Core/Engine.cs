@@ -44,34 +44,6 @@ namespace TaxCalculator.Core
 
         public void Start()
         {
-            // Models.TaxCalculator taxCalculator = new Models.TaxCalculator(1000, 10 / 100);
-            //
-            // // Print information / give instructions to the user
-            // Console.WriteLine(taxCalculator.UseGreeting());
-            // Console.WriteLine(taxCalculator.AskForInput());
-            //
-            // taxCalculator.CollectDollarsAmount(Console.ReadLine());
-            //
-            // bool areDollarsBelowThreshold = taxCalculator.CheckDollarsBelowThreshold();
-            // if (areDollarsBelowThreshold)
-            // {
-            //     Console.WriteLine(taxCalculator.GetNetIncomeMessage());
-            //     return;
-            // }
-            //
-            // taxCalculator.CalculateIncomeTax();
-            //
-            // taxCalculator.CalculateSocialTax();
-            //
-            // taxCalculator.CalculateNetIncome();
-            //
-            // Console.WriteLine(;
-            
-            // >>>>
-            
-            // Console.WriteLine(this.TaxCalculator.UseGreetingMessage());
-            // Console.WriteLine(this.TaxCalculator.UseAskForInputMessage());
-            
             while (true)
             {
                 try
