@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace TaxCalculator.Commands.Contracts
 {
     public interface ICommand

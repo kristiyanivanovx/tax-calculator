@@ -4,6 +4,7 @@ using System.Text;
 
 using TaxCalculator.Core.Contracts;
 using TaxCalculator.Core.Providers;
+using TaxCalculator.Models;
 using TaxCalculator.Models.Contracts;
 
 namespace TaxCalculator.Core
@@ -19,6 +20,11 @@ namespace TaxCalculator.Core
             this.Reader = new ConsoleReader();
             this.Writer = new ConsoleWriter();
             this.Parser = new CommandParser();
+            this.InformationParser = new InformationParser();
+            this.IncomeTaxCalculator = new IncomeTaxCalculator();
+            this.SocialTaxCalculator = new SocialTaxCalculator();
+            this.HighIncomeTaxCalculator = new HighIncomeTaxCalculator();
+            this.NetIncomeCalculator = new NetIncomeCalculator();
         }
 
         public static IEngine Instance
@@ -40,7 +46,15 @@ namespace TaxCalculator.Core
 
         public IParser Parser { get; set; }
 
-        public ITaxCalculator TaxCalculator { get; set; }
+        public IInformationParser InformationParser { get; set; }
+        
+        public IIncomeTaxCalculator IncomeTaxCalculator { get; set; }
+        
+        public ISocialTaxCalculator SocialTaxCalculator { get; set; }
+        
+        public IHighIncomeTaxCalculator HighIncomeTaxCalculator { get; set; }
+
+        public INetIncomeCalculator NetIncomeCalculator { get; set; }
 
         public void Start()
         {

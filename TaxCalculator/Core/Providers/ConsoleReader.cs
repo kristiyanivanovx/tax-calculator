@@ -1,4 +1,3 @@
-using System;
 using TaxCalculator.Core.Contracts;
 
 namespace TaxCalculator.Core.Providers

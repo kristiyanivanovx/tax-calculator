@@ -12,6 +12,14 @@ namespace TaxCalculator.Core.Contracts
 
         IParser Parser { get; set; }
         
-        ITaxCalculator TaxCalculator { get; set; }
+        IInformationParser InformationParser { get; set; }
+        
+        IIncomeTaxCalculator IncomeTaxCalculator { get; set; }
+        
+        ISocialTaxCalculator SocialTaxCalculator { get; set; }
+
+        IHighIncomeTaxCalculator HighIncomeTaxCalculator { get; set; }
+        
+        INetIncomeCalculator NetIncomeCalculator { get; set; }
     }
 }
